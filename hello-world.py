@@ -2,3 +2,4 @@
 
 # our first print statement
 print('hello world')
+print('hello, Beyonce')
