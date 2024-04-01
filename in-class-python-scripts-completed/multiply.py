@@ -5,12 +5,12 @@ def get_input():
     # ask for the size of the multiplication matrix
     size = int(input("Enter the size of your table: "))
 
-    return size
+    # calculate how many spaces we'll need for the output of each cell in the matrix
+    cell_width = len(str((size * size))) + 1
+
+    return size, cell_width
 
 def print_table(n):
-
-    # calculate how many spaces we'll need for the output of each cell in the matrix
-    cell_width = len(str((n * n))) + 1
 
     # nested for loop to calculate i * j
     for i in range(1,n+1):
@@ -24,9 +24,10 @@ def print_table(n):
 
 
 def main():
-    input_num = get_input()
-
-    print_table(input_num)
+    input_num, width = get_input()
+    print(input_num, width)
+    
+#    print_table(input_num)
 
 
 # set the environment for this script
