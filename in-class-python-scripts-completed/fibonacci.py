@@ -39,7 +39,10 @@ def fib(beyonce):
 
 def print_output(number, fibonacci_number):
     # print the output
-    print('The Fibonacci number for', number, 'is:', fibonacci_number)
+    if args.verbose:
+        print('The Fibonacci number for', number, 'is:', fibonacci_number)
+    else:
+        print(fibonacci_number)
 
 
 def main():
@@ -66,4 +69,3 @@ if __name__ == '__main__':
 
 
 
-    
