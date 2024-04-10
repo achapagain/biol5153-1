@@ -23,7 +23,7 @@ def print_table(n):
         print()
 
 
-def main():
+def main(bbbb):bbb sh
     input_num, width = get_input()
     print(input_num, width)
     
